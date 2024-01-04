@@ -17,3 +17,7 @@ data "aws_ami" "centos8" {
     values = ["hvm"]
   }
 }
+
+data "aws_vpc" "default" {
+  default = true
+}
